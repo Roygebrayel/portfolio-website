@@ -1,24 +1,23 @@
-import { BrowserRouter as router, routes, route } from 'react-router-dom';
+import logo from './logo.svg';
 import './App.css';
-import Home from './pages/Home';
-import Experience from './pages/Experience';
-import Project from './pages/Project';
-import Navbar from './components/Navbar';
-import './style/App'
+
 function App() {
   return (
     <div className="App">
-      <router>
-        <Navbar />
-        <routes>
-
-          <route path="/" element={<Home />} />
-          <route path="/experience" element={<Experience />} />
-          <route path="/projects" element={<Project />} />
-        </routes>
-      </router>
-
-
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }

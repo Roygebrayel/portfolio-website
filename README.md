@@ -68,18 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-### snippets to use
-
-<i> RAFCE </i> : 
-
-import React from 'react'
-
-const Project = () => {
-  return (
-    <div>Project</div>
-  )
-}
-
-export default Project# portfolio-website
