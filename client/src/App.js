@@ -6,8 +6,29 @@ import Experience from "./pages/Experience";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectDisplay from "./pages/ProjectDisplay";
-function App() {
-  return (
+import React from "react";
+// import { render } from "../../backend/app";
+
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {apiResponse:""};
+  }
+  callApi(){
+    fetch("http://localhost:7000/users")
+    .then(res => res.text())
+    .then(res => this.setState({apiResponse:res}));
+
+
+  }
+  componentWillMount(){
+    this.callApi();
+
+  }
+
+render(){
+    return (
+      <>
     <div className="App">
       <Router>
         <Navbar />
@@ -20,7 +41,12 @@ function App() {
        <Footer />
       </Router>
     </div>
+    <div>{this.state.apiResponse}</div>
+     </>
   );
+  
+}
+
 }
 
 export default App;

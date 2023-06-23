@@ -12,7 +12,7 @@ const footer = () => {
         <div className="footer">
 
             <div className="socialMedia">
-                <a target="_blank" href="http://instagram.com/roy.gebrayel">
+                <a target="_blank" href="http://instagram.com/roy.gebrayel" rel="noreferrer">
                     <InstagramIcon/>
                     </a>
                 <TwitterIcon/>

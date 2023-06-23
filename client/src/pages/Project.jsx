@@ -1,8 +1,6 @@
 import React from 'react'
 import ProjectItem from '../components/ProjectItem'
-import Proj1 from "../assets/proj1.jpg";
 import "../style/Project.css"
-import proj2 from "../assets/proj2.jpg";
 import Proj3 from "../assets/proj3.webp"
 import { projectList } from '../helpers/ProjectLIst';
 const Project = () => {
