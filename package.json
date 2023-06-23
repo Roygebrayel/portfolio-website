@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://roygebrayel.github.io/portfolio-website/Experience/",
+  "homepage": "https://roygebrayel.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,7 +43,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
+  "resolutions": {
+    "workbox-webpack-plugin": "16.0.0"
   }
+  
 }
