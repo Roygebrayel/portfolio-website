@@ -24,7 +24,7 @@ const [expandNavbar,setExpandNavbar] = useState(false);
       </div>
       <div className="links">
         <Link to="/"> Home </Link>
-        <Link to="/projects"> Projects </Link>
+        <Link to="/project"> Projects </Link>
         <Link to="/experience"> Experience </Link>
       </div>
     </div>
